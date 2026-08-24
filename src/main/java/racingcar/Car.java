@@ -7,7 +7,8 @@ public class Car {
     private String name;
     private int location;
 
-    public Car() {
+    public Car(String name) {
+        this.name = name;
         location = 0;
     }
 
@@ -21,5 +22,9 @@ public class Car {
     private int randomGenerator() {
         Random random = new Random();
         return random.nextInt(10);
+    }
+
+    public int getLocation() {
+        return location;
     }
 }
